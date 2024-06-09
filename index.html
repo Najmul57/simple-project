@@ -29,8 +29,14 @@
         transform: translateY(-50%);
         z-index: 999;
         border: 0;
+        background: transparent;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px;
       }
-
+      .slider_active:hover .slick-arrow {
+        opacity: 1;
+      }
       .slider_active .slick-next.slick-arrow {
         right: 0;
       }
